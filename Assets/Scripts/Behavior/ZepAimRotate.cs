@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class TopDownAimRotation : MonoBehaviour
+public class ZepAimRotate : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer characterRenderer;
 

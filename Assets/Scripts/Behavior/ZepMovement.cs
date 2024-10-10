@@ -9,16 +9,12 @@ public class TopDownMovement : MonoBehaviour
     private Rigidbody2D movementRigidbody;
 
     private Vector2 movementDirection = Vector2.zero;
-    private Vector2 knockback = Vector2.zero;
-    private float knockbackDuration = 0.0f;
 
     [SerializeField]private float speed = 1.0f;
 
     private void Awake()
     {
         // 주로 내 컴포넌트 안에서 끝나는 거
-
-        // controller랑 TopDownMovement랑 같은 게임오브젝트 안에 있다라는 가정
         controller = GetComponent<ZepController>();
         movementRigidbody = GetComponent<Rigidbody2D>();
     }
