@@ -10,12 +10,11 @@ public class PlayerNameHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerNameText.text = GameManager.instance.playerName;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        playerNameText.text = GameManager.instance.playerName;
     }
 }

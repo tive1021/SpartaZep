@@ -20,7 +20,6 @@ public class SelectCharacter : MonoBehaviour
 
     public void OnclickPenguin()
     {
-        Debug.Log(2);
         GameManager.instance.sprite = GameManager.playerSprite.penguin;
         selectImage.sprite = penguinImage;
         characterSelect.gameObject.SetActive(false);
@@ -29,11 +28,9 @@ public class SelectCharacter : MonoBehaviour
 
     public void OnClickKnight()
     {
-        Debug.Log(3);
         GameManager.instance.sprite = GameManager.playerSprite.knight;
         selectImage.sprite = knightImage;
         characterSelect.gameObject.SetActive(false);
         selectImage.gameObject.SetActive(true);
     }
-
 }
